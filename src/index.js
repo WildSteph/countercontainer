@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 
 const store = createStore(
   counterReducer,
-  window.REDUX_DEVTOOLS_EXTENSION && window.REDUX_DEVTOOLS_EXTENSION()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 render(
